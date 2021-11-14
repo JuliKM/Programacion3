@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Punto 8</title>
+        <script type="text/javascript" src="Punto8.js"></script>
+    </head>
+    <body>
+        <table border="1">
+			<tr>
+				<td colspan="4"><input type="text" id="inputField"></td>
+			</tr>
+			<tr>
+				<td><button onclick="concatenar(7)">7</button></td>
+                <td><button onclick="concatenar(8)">8</button></td>
+                <td><button onclick="concatenar(9)">9</button></td>
+                <td><button onclick="operacion('*')">X</button></td>  
+			</tr>
+            <tr>
+                <td><button onclick="concatenar(4)">4</button></td>
+                <td><button onclick="concatenar(5)">5</button></td>
+                <td><button onclick="concatenar(6)">6</button></td>
+                <td><button onclick="operacion('/')">/</button></td> 
+            </tr>
+            <tr>
+                <td><button onclick="concatenar(1)">1</button></td>
+                <td><button onclick="concatenar(2)">2</button></td>
+                <td><button onclick="concatenar(3)">3</button></td>
+                <td><button onclick="operacion('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="borrar()">C</button></td>
+                <td><button onclick="concatenar(0)">0</button></td>
+                <td><button onclick="realizarOperacion()">=</button></td>
+                <td><button onclick="operacion('+')">+</button></td>
+		</table>
+	</body>
+</html>
