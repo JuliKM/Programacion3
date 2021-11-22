@@ -1,6 +1,6 @@
 <%-- 
     Document   : index
-    Created on : 22 nov. 2021, 16:20:27
+    Created on : 22 nov. 2021, 17:56:35
     Author     : JuliKM
 --%>
 
@@ -9,42 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Punto 1</title>
+        <title>Tp JSP</title>
     </head>
     <body>
-        <h1>TP 1 JSP</h1>
-        <form>
-            Ingrese el número de filas deseadas: <input type="text" name="numeroF" id="filas"/>
-            Ingrese el número de columnas deseadas: <input type="text" name="numeroC" id="col"/>
-            <button type="submit">ENVIAR</button>
+        <h1>Punto 2</h1>
+        <form action="Punto2Pag2.jsp">
+            Ingrese su DNI: <input type="text" name="dni" id="dni"/>
+            Ingrese su Nombre: <input type="text" name="nombre" id="nombre"/>
+            Ingrese su Domicilio: <input type="text" name="dom" id="dom"/>    
+            <button type="submit">Enviar</button>
         </form>
-        <table border="1">
-            <%
-                int filas = 0;
-                int col = 0;
-                if (request.getParameter("numeroF") != null) {
-                filas = Integer.parseInt(request.getParameter("numeroF"));
-                        //request.getParameter("numeroF");
-                }
-                if (request.getParameter("numeroC") != null) {
-                col = Integer.parseInt(request.getParameter("numeroC"));
-                }
-                int filasNro = filas;
-                int colNro = col;
-                for (int i = 0; i < filasNro; i++) {
-            %>
-            <tr>
-                <%
-                    for (int j = 0; j < colNro; j++) {
-                %>
-                <td><% out.println((i+1)+"."+(j+1));%></td>
-                <%
-                    }
-                %>
-            </tr>
-            <%
-                }
-            %>
-        </table>
     </body>
 </html>
